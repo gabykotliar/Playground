@@ -2,6 +2,9 @@
 
 namespace Playground
 {
+    /// <summary>
+    /// https://leetcode.com/problems/two-sum/
+    /// </summary>
     public class TwoSum
     {
         public int[] TwoSumBruteForce(int[] nums, int target)

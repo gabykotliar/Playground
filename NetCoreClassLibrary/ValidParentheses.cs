@@ -38,6 +38,9 @@ using System.Collections;
 
 namespace Playground
 {
+    /// <summary>
+    /// https://leetcode.com/problems/valid-parentheses/
+    /// </summary>
     public class ValidParentheses
     {
         public bool IsValid(string s)

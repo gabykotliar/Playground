@@ -2,16 +2,21 @@
 {
     public class LongestCommonPrefix
     {
+        //Runtime: 148 ms
         public string GetPrefixWordByWord(string[] strs)
         {
             if (strs.Length == 0) return string.Empty;
+
+            if (strs.Length == 1) return strs[0];
 
             int minLen;
             string pref = strs[0];
             int charIdx;
             int wordIdx = 1;
 
-            while (pref != string.Empty && wordIdx < strs.Length)
+            int listLength = strs.Length;
+
+            while (pref != string.Empty && wordIdx < listLength)
             {
                 minLen = strs[wordIdx].Length < pref.Length ? strs[wordIdx].Length : pref.Length;
 
@@ -26,7 +31,7 @@
 
                 wordIdx++;
             }
-
+          
             return pref;
         }
 
